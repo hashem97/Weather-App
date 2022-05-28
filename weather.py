@@ -31,25 +31,25 @@ def getWeather(canvas):
     final_info = Condition + "\n" + str(temp) + "°c"
     final_data = (
         "\n"
-        + "max Temp:"
+        + "max Temp: "
         + str(max_temp)
         + "\n"
-        + "min Temp:"
+        + "min Temp: "
         + str(min_temp)
         + "\n"
-        + "pressure:"
+        + "pressure: "
         + str(pressure)
         + "\n"
-        + "Humidity:"
+        + "Humidity: "
         + str(humidity)
         + "\n"
-        + "wind Speed:"
+        + "wind Speed: "
         + str(wind)
         + "\n"
-        + "Sunrise:"
+        + "Sunrise: "
         + sunrise
         + "\n"
-        + "Sunset:"
+        + "Sunset: "
         + sunset
     )
     label1.config(text=final_info)
@@ -72,4 +72,5 @@ label1.pack()
 label2 = tk.Label(Canvas, font=f)
 label2.pack()
 
-Canvas
+
+Canvas.mainloop()
